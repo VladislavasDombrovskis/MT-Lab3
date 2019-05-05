@@ -134,6 +134,12 @@ var extrudeSettings = {
 	
 var geometry = new THREE.ExtrudeGeometry( modelis, extrudeSettings );
 var material = new THREE.MeshBasicMaterial( { color: 0x68F442, opacity: 0.5 } );
+
+var mesh = new THREE.Mesh( geometry, material ) ;
+		
+	mesh.position.y = 0.5;
+	markerRoot1.add(mesh);
+
 function update()
 {
 	// update artoolkit on every frame
