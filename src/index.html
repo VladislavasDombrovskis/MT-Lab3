@@ -120,6 +120,17 @@ modelis.lineTo( 0, 25);
 modelis.lineTo( 20, 25 );
 modelis.lineTo( 20, 0 );
 modelis.lineTo( 0, 0 );
+
+
+var extrudeSettings = {
+	steps: 2,
+	depth: 16,
+	bevelEnabled: true,
+	bevelThickness: 1,
+	bevelSize: 1,
+	bevelOffset: 0,
+	bevelSegments: 1
+};
 	let geometry1	= new THREE.CubeGeometry(1,1,1);
 	let material1	= new THREE.MeshNormalMaterial({
 		transparent: true,
