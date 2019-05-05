@@ -114,6 +114,12 @@ function initialize()
 
 
 var modelis = new THREE.Shape();
+
+modelis.moveTo( 0,0 );
+modelis.lineTo( 0, 25);
+modelis.lineTo( 20, 25 );
+modelis.lineTo( 20, 0 );
+modelis.lineTo( 0, 0 );
 	let geometry1	= new THREE.CubeGeometry(1,1,1);
 	let material1	= new THREE.MeshNormalMaterial({
 		transparent: true,
